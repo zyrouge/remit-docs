@@ -7,8 +7,6 @@
 
 ## Master Server
 
-### Public Key
-
 ### Ping
 
 Route: `POST /ping`
