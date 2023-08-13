@@ -46,4 +46,20 @@ Response Body (200):
 
 ## Slave Server
 
+### Ping
+
+Route: `POST /ping`
+
+Request Body:
+
+| Key | Type | Description |
+| --- | ---- | ----------- |
+| `client_key` | `string` | Client key. |
+
+Response Body (200):
+
+| Key | Type | Description |
+| --- | ---- | ----------- |
+| `success` | `boolean` | Response status. |
+
 ## Slave-Master Connection
