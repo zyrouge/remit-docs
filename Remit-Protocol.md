@@ -31,10 +31,9 @@ Request Body:
 
 | Key | Type | Description |
 | --- | ---- | ----------- |
-| `client` | `object` | Client information. |
-| `client.username` | `string` | Client username. |
-| `client.host` | `string` | Client server host. |
-| `client.port` | `integer` | Client server port. |
+| `client_username` | `string` | Client username. |
+| `client_host` | `string` | Client server host. |
+| `client_port` | `integer` | Client server port. |
 
 Response Body (200):
 
