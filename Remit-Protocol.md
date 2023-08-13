@@ -7,11 +7,13 @@
 
 ## Master Server
 
+### Public Key
+
 ### Connection Request
 
-Route: `/connection/request`
+Route: `POST /connection/request`
 
-Body:
+Request Body:
 
 | Key | Type | Description |
 | --- | ---- | ----------- |
@@ -19,6 +21,12 @@ Body:
 | `client.username` | `string` | Client username. |
 | `client.host` | `string` | Client server host. |
 | `client.port` | `integer` | Client server port. |
+
+Response Body (200):
+
+| Key | Type | Description |
+| --- | ---- | ----------- |
+| `success` | `boolean` | Response status. |
 
 ## Master-Slave Connection
 
