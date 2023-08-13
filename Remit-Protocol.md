@@ -9,6 +9,22 @@
 
 ### Public Key
 
+### Ping
+
+Route: `POST /ping`
+
+Request Body:
+
+| Key | Type | Description |
+| --- | ---- | ----------- |
+| `client_key` | `string` | Client key. |
+
+Response Body (200):
+
+| Key | Type | Description |
+| --- | ---- | ----------- |
+| `success` | `boolean` | Response status. |
+
 ### Connection Request
 
 Route: `POST /connection/request`
