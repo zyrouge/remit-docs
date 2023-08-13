@@ -15,7 +15,7 @@ Request Body:
 
 | Key | Type | Description |
 | --- | ---- | ----------- |
-| `client_key` | `string` | Client key. |
+| `client_secret` | `string` | Client secret. |
 
 Response Body (200):
 
@@ -54,7 +54,7 @@ Request Body:
 
 | Key | Type | Description |
 | --- | ---- | ----------- |
-| `client_key` | `string` | Client key. |
+| `server_secret` | `string` | Server secret. |
 
 Response Body (200):
 
