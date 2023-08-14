@@ -1,6 +1,8 @@
 # Slave Server
 
-## Ping
+## Routes
+
+### Ping
 
 Route: `POST /ping`
 
@@ -16,7 +18,7 @@ Response Body (200):
 | --------- | --------- | ---------------- |
 | `success` | `boolean` | Response status. |
 
-## Connection Accepted
+### Connection Accepted
 
 Route: `POST /connection/accept`
 
@@ -35,7 +37,7 @@ Response Body (200):
 | --------- | --------- | ---------------- |
 | `success` | `boolean` | Response status. |
 
-## Connection Closed
+### Connection Closed
 
 Route: `POST /connection/close`
 
@@ -43,7 +45,7 @@ Request Body:
 
 | Key             | Type     | Description              |
 | --------------- | -------- | ------------------------ |
-| `cleint_secret` | `string` | Slave connection secret. |
+| `server_secret` | `string` | Slave connection secret. |
 
 Response Body (200):
 

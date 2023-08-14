@@ -1,4 +1,4 @@
-# Remit Protocol
+# Home
 
 ## Top-Level Components
 

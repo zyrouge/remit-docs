@@ -1,6 +1,8 @@
 # Master Server
 
-## Ping
+## Routes
+
+### Ping
 
 Route: `POST /ping`
 
@@ -16,7 +18,7 @@ Response Body (200):
 | --------- | --------- | ---------------- |
 | `success` | `boolean` | Response status. |
 
-## Connection Request
+### Connection Request
 
 Route: `POST /connection/request`
 
@@ -34,7 +36,7 @@ Response Body (200):
 | --------- | --------- | ---------------- |
 | `success` | `boolean` | Response status. |
 
-## Connection Closed
+### Connection Closed
 
 Route: `POST /connection/close`
 
@@ -42,10 +44,68 @@ Request Body:
 
 | Key             | Type     | Description               |
 | --------------- | -------- | ------------------------- |
-| `server_secret` | `string` | Master connection secret. |
+| `client_secret` | `string` | Master connection secret. |
 
 Response Body (200):
 
 | Key       | Type      | Description      |
 | --------- | --------- | ---------------- |
 | `success` | `boolean` | Response status. |
+
+### All Listings
+
+Route: `POST /listings/all`
+
+Request Body:
+
+| Key             | Type     | Description               |
+| --------------- | -------- | ------------------------- |
+| `client_secret` | `string` | Master connection secret. |
+
+Response Body (200):
+
+| Key              | Type      | Description                     |
+| ---------------- | --------- | ------------------------------- |
+| `success`        | `boolean` | Response status.                |
+| `listings_count` | `integer` | Number of listings.             |
+| `listings`       | `array`   | All listings.                   |
+| `listings.id`    | `string`  | Listing ID.                     |
+| `listings.name`  | `string`  | Listing name.                   |
+| `listings.type`  | `string`  | Listing type. (`file`/`folder`) |
+| `listings.size`  | `integer` | Listing size in `kb`.           |
+
+### Get Listing Folder
+
+Route: `POST /listings/get-folder`
+
+Request Body:
+
+| Key             | Type     | Description               |
+| --------------- | -------- | ------------------------- |
+| `client_secret` | `string` | Master connection secret. |
+| `listing_id`    | `string` | Listing ID.               |
+
+Response Body (200):
+
+| Key              | Type      | Description                     |
+| ---------------- | --------- | ------------------------------- |
+| `success`        | `boolean` | Response status.                |
+| `listings_count` | `integer` | Number of listings.             |
+| `listings`       | `array`   | All listings.                   |
+| `listings.id`    | `string`  | Listing ID.                     |
+| `listings.name`  | `string`  | Listing name.                   |
+| `listings.type`  | `string`  | Listing type. (`file`/`folder`) |
+| `listings.size`  | `integer` | Listing size in `kb`.           |
+
+### Get Listing File
+
+Route: `POST /listings/get-file`
+
+Request Body:
+
+| Key             | Type     | Description               |
+| --------------- | -------- | ------------------------- |
+| `client_secret` | `string` | Master connection secret. |
+| `listing_id`    | `string` | Listing ID.               |
+
+Response Body (200): Stream of binary data.
