@@ -7,12 +7,12 @@ edit_uri: edit/main/docs/
 
 theme:
     name: material
-    # logo: assets/logo.png
-    favicon: assets/favicon.png
+    logo: assets/logo.png
+    favicon: assets/logo.png
     palette:
         scheme: slate
-        primary: purple
-        accent: purple
+        primary: indigo
+        accent: indigo
     font:
         text: Fira Sans
         code: Fira Code
