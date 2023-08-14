@@ -1,0 +1,31 @@
+name: Documentation
+
+on:
+    push:
+        paths:
+            - mkdocs.yaml
+            - docs
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: 3.x
+
+            - name: 🚧 Install dependencies
+              run: pip install mkdocs-material
+
+            - name: 👷 Build site
+              run: mkdocs build -d dist
+
+            - name: 🚀 Deploy
+              uses: zyrouge/gh-push-action@v1.0.5
+              with:
+                  directory: dist
+                  branch: gh-pages
