@@ -1,5 +1,7 @@
 # Home
 
+## Overview
+
 This website documents the Remit protocol.
 
 ## Rules
