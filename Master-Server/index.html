@@ -299,15 +299,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-listing-folder" class="md-nav__link">
-    Get Listing Folder
+  <a href="#read-listing-folder" class="md-nav__link">
+    Read Listing Folder
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-listing-file" class="md-nav__link">
-    Get Listing File
+  <a href="#read-listing-file" class="md-nav__link">
+    Read Listing File
   </a>
   
 </li>
@@ -433,15 +433,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-listing-folder" class="md-nav__link">
-    Get Listing Folder
+  <a href="#read-listing-folder" class="md-nav__link">
+    Read Listing Folder
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-listing-file" class="md-nav__link">
-    Get Listing File
+  <a href="#read-listing-file" class="md-nav__link">
+    Read Listing File
   </a>
   
 </li>
@@ -573,7 +573,7 @@
 <tr>
 <td><code>client_secret</code></td>
 <td><code>string</code></td>
-<td>Master connection secret.</td>
+<td>Slave connection secret.</td>
 </tr>
 </tbody>
 </table>
@@ -609,7 +609,7 @@
 <tr>
 <td><code>client_secret</code></td>
 <td><code>string</code></td>
-<td>Master connection secret.</td>
+<td>Slave connection secret.</td>
 </tr>
 </tbody>
 </table>
@@ -660,8 +660,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="get-listing-folder">Get Listing Folder<a class="headerlink" href="#get-listing-folder" title="Permanent link">&para;</a></h3>
-<p>Route: <code>POST /listings/get-folder</code></p>
+<h3 id="read-listing-folder">Read Listing Folder<a class="headerlink" href="#read-listing-folder" title="Permanent link">&para;</a></h3>
+<p>Route: <code>POST /listings/read/folder</code></p>
 <p>Request Body:</p>
 <table>
 <thead>
@@ -675,7 +675,7 @@
 <tr>
 <td><code>client_secret</code></td>
 <td><code>string</code></td>
-<td>Master connection secret.</td>
+<td>Slave connection secret.</td>
 </tr>
 <tr>
 <td><code>listing_id</code></td>
@@ -731,8 +731,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="get-listing-file">Get Listing File<a class="headerlink" href="#get-listing-file" title="Permanent link">&para;</a></h3>
-<p>Route: <code>POST /listings/get-file</code></p>
+<h3 id="read-listing-file">Read Listing File<a class="headerlink" href="#read-listing-file" title="Permanent link">&para;</a></h3>
+<p>Route: <code>POST /listings/read/file</code></p>
 <p>Request Body:</p>
 <table>
 <thead>
@@ -746,7 +746,7 @@
 <tr>
 <td><code>client_secret</code></td>
 <td><code>string</code></td>
-<td>Master connection secret.</td>
+<td>Slave connection secret.</td>
 </tr>
 <tr>
 <td><code>listing_id</code></td>
