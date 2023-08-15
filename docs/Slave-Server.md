@@ -29,7 +29,8 @@ Request Body:
 | `server_username` | `string`  | Master username.          |
 | `server_host`     | `string`  | Master server host.       |
 | `server_port`     | `integer` | Master server port.       |
-| `client_secret`   | `integer` | Master connection secret. |
+| `server_secret`   | `string`  | Master connection secret. |
+| `client_secret`   | `integer` | Slave connection secret.  |
 
 Response Body (200):
 
@@ -43,9 +44,9 @@ Route: `POST /connection/close`
 
 Request Body:
 
-| Key             | Type     | Description              |
-| --------------- | -------- | ------------------------ |
-| `server_secret` | `string` | Slave connection secret. |
+| Key             | Type     | Description               |
+| --------------- | -------- | ------------------------- |
+| `server_secret` | `string` | Master connection secret. |
 
 Response Body (200):
 

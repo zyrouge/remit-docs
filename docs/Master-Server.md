@@ -42,9 +42,9 @@ Route: `POST /connection/close`
 
 Request Body:
 
-| Key             | Type     | Description               |
-| --------------- | -------- | ------------------------- |
-| `client_secret` | `string` | Master connection secret. |
+| Key             | Type     | Description              |
+| --------------- | -------- | ------------------------ |
+| `client_secret` | `string` | Slave connection secret. |
 
 Response Body (200):
 
@@ -58,9 +58,9 @@ Route: `POST /listings/all`
 
 Request Body:
 
-| Key             | Type     | Description               |
-| --------------- | -------- | ------------------------- |
-| `client_secret` | `string` | Master connection secret. |
+| Key             | Type     | Description              |
+| --------------- | -------- | ------------------------ |
+| `client_secret` | `string` | Slave connection secret. |
 
 Response Body (200):
 
@@ -74,16 +74,16 @@ Response Body (200):
 | `listings.type`  | `string`  | Listing type. (`file`/`folder`) |
 | `listings.size`  | `integer` | Listing size in `kb`.           |
 
-### Get Listing Folder
+### Read Listing Folder
 
-Route: `POST /listings/get-folder`
+Route: `POST /listings/read/folder`
 
 Request Body:
 
-| Key             | Type     | Description               |
-| --------------- | -------- | ------------------------- |
-| `client_secret` | `string` | Master connection secret. |
-| `listing_id`    | `string` | Listing ID.               |
+| Key             | Type     | Description              |
+| --------------- | -------- | ------------------------ |
+| `client_secret` | `string` | Slave connection secret. |
+| `listing_id`    | `string` | Listing ID.              |
 
 Response Body (200):
 
@@ -97,15 +97,15 @@ Response Body (200):
 | `listings.type`  | `string`  | Listing type. (`file`/`folder`) |
 | `listings.size`  | `integer` | Listing size in `kb`.           |
 
-### Get Listing File
+### Read Listing File
 
-Route: `POST /listings/get-file`
+Route: `POST /listings/read/file`
 
 Request Body:
 
-| Key             | Type     | Description               |
-| --------------- | -------- | ------------------------- |
-| `client_secret` | `string` | Master connection secret. |
-| `listing_id`    | `string` | Listing ID.               |
+| Key             | Type     | Description              |
+| --------------- | -------- | ------------------------ |
+| `client_secret` | `string` | Slave connection secret. |
+| `listing_id`    | `string` | Listing ID.              |
 
 Response Body (200): Stream of binary data.
