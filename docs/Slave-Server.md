@@ -31,6 +31,7 @@ Request Body:
 | `server_port`     | `integer` | Master server port.       |
 | `server_secret`   | `string`  | Master connection secret. |
 | `client_secret`   | `integer` | Slave connection secret.  |
+| `invite_code`     | `string`  | Invite code.              |
 
 Response Body (200):
 

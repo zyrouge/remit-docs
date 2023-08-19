@@ -29,6 +29,7 @@ Request Body:
 | `client_username` | `string`  | Slave username.    |
 | `client_host`     | `string`  | Slave server host. |
 | `client_port`     | `integer` | Slave server port. |
+| `invite_code`     | `string`  | Invite code.       |
 
 Response Body (200):
 
